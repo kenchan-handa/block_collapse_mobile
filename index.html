@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | block_collapse</title>
+    <title>ざきまブロック崩し | block_collapse</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -53,8 +53,9 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "900px";
-        canvas.style.height = "1600px";
+        var displayHeight = window.innerHeight;
+        canvas.style.width = displayHeight * 0.5625 + 'px';
+        canvas.style.height = displayHeight + 'px';
       }
       loadingBar.style.display = "block";
 
